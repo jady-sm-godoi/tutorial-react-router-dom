@@ -1,13 +1,10 @@
-import { useParams, useSearchParams } from 'react-router-dom';
 import './style.css'
 
 export const Post = () => {
-  const {id} = useParams() //hook do react para pegar o id do post pela rota
-  const [queryString, setQueryString] = useSearchParams() //hook para pegar o que vem depois de ? na rota (127.0.0.1:5173/posts/10?page=101)
-
   return (
     <div>
-      <h1>Post: {`Params: ${id}`} - {`QS: ${queryString.get('page')}`}</h1>
+      <h1>Post</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro assumenda accusantium sapiente fuga autem voluptatem impedit optio et, aliquam, exercitationem quos itaque placeat odit corrupti cumque consectetur quis! Animi, unde.</p>
     </div>
   );
 };
